@@ -1,0 +1,404 @@
+/* 
+* Agricultura de Gravatá - Responsive Styles
+* Cores oficiais da Prefeitura de Gravatá:
+* - Verde: #2CB1A3
+* - Vermelho: #EB3C3B
+* - Marrom: #60442F
+* - Amarelo: #FC9F1C
+*/
+
+/* Telas grandes (desktops, menos de 1200px) */
+@media (max-width: 1200px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .about-content {
+        gap: 30px;
+    }
+    
+    .charts-container {
+        flex-direction: column;
+    }
+    
+    .chart-box {
+        max-width: 100%;
+    }
+    
+    #productionChart-container, 
+    #distributionChart-container {
+        height: 350px;
+    }
+    
+    .culture-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .culture-card p {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* Telas médias (tablets, menos de 992px) */
+@media (max-width: 992px) {
+    .hero {
+        padding: 130px 0 80px;
+        height: 400px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-text {
+        order: 2;
+    }
+    
+    .about-image {
+        order: 1;
+        max-width: 100%;
+    }
+    
+    .cultures-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .info-item {
+        justify-content: center;
+    }
+    
+    .social-media {
+        justify-content: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+    
+    #productionChart-container, 
+    #distributionChart-container {
+        height: 300px;
+    }
+}
+
+/* Telas pequenas (celulares em landscape, menos de 768px) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 0 70px;
+        height: 380px;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    header .container {
+        padding: 0 20px;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: white;
+        transition: all 0.3s ease;
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        padding-top: 80px;
+    }
+    
+    nav.show {
+        right: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    nav ul li {
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px 0;
+        display: block;
+    }
+    
+    .menu-mobile {
+        display: flex;
+    }
+    
+    .cultures-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .culture-card {
+        padding: 25px;
+    }
+    
+    .culture-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .chart-filters {
+        gap: 10px;
+    }
+    
+    .chart-filter-btn {
+        padding: 7px 12px;
+        font-size: 0.8rem;
+    }
+    
+    #productionChart-container, 
+    #distributionChart-container {
+        height: 280px;
+    }
+    
+    .footer-col {
+        text-align: center;
+    }
+    
+    .footer-col ul {
+        text-align: center;
+    }
+    
+    .footer-autoridade, .footer-tecnico {
+        text-align: center;
+    }
+}
+
+/* Telas muito pequenas (celulares em portrait, menos de 576px) */
+@media (max-width: 576px) {
+    .hero {
+        padding: 100px 0 60px;
+        height: 350px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 1rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .about, .cultures, .statistics, .contact {
+        padding: 60px 0;
+    }
+    
+    .about-content, .contact-content {
+        margin-top: 20px;
+    }
+    
+    .culture-card {
+        padding: 20px;
+    }
+    
+    .culture-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .culture-icon i, .culture-icon img {
+        font-size: 1.5rem;
+    }
+    
+    .culture-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .culture-card p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    
+    .chart-box {
+        padding: 15px;
+    }
+    
+    .chart-box h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    #productionChart-container, 
+    #distributionChart-container {
+        height: 250px;
+    }
+    
+    .hectares-info {
+        padding: 15px;
+    }
+    
+    .hectares-info-value strong {
+        font-size: 1.8rem;
+    }
+    
+    .contact-banner {
+        padding: 40px 0;
+    }
+    
+    .contact-banner h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-banner p {
+        font-size: 0.9rem;
+    }
+    
+    .info-item i {
+        font-size: 1.3rem;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        gap: 20px;
+    }
+}
+
+/* Telas muito pequenas (celulares pequenos, menos de 400px) */
+@media (max-width: 400px) {
+    .hero {
+        padding: 90px 0 50px;
+        height: 300px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 0.9rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.85rem;
+    }
+    
+    .section-divider {
+        margin: 30px 0;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    .culture-card {
+        padding: 15px;
+    }
+    
+    .chart-box {
+        padding: 10px;
+    }
+    
+    .chart-filters {
+        margin-bottom: 15px;
+    }
+    
+    .chart-filter-btn {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Suporte a telas com dark mode */
+@media (prefers-color-scheme: dark) {
+    /* Estilos para temas escuros, se necessário */
+}
+
+/* Específico para o menu móvel */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-overlay.show {
+    display: block;
+    opacity: 1;
+} 
